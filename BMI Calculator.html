@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<html lang="en">
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>FT GYM - BMI Calculator </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+
+    <style media="screen">
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: sans-serif;
+            min-height: 100vh;
+            background-color: transparent;
+        }
+
+        div {
+            width: 550px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: #221f1f;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #c51515;
+        }
+
+
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+            color: antiquewhite;
+
+
+        }
+
+        h6:hover a {
+            color: red;
+        }
+
+        a {
+            color: aliceblue;
+        }
+
+        .text {
+            text-align: left;
+            margin-left: 150px;
+            color: #eeaeae;
+
+        }
+
+        h7 {
+            color: antiquewhite;
+            font-size: 10px;
+            font-weight: 250;
+        }
+
+        #w,
+        #h {
+            color: #fff;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 200;
+            outline: none;
+            border: none;
+            background: none;
+            border-bottom: 1px solid #eb4b4b;
+            width: 250px;
+        }
+
+        #w:focus,
+        #h:focus {
+            border-bottom: 2px solid #d50b0b;
+            width: 270px;
+            transition: 0.5s;
+
+        }
+
+        #result {
+            color: #e8c36d;
+
+        }
+
+        #btn {
+            font-family: inherit;
+            margin-top: 10px;
+            border: none;
+            color: #f3a9a9;
+            background-image: linear-gradient(0deg, #c11414, #c11414);
+            width: 150x;
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+
+        }
+
+        #btn:hover {
+            color: #fff;
+        }
+
+        #info {
+            font-family: inherit;
+            font-size: 12px;
+            color: azure;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function BMI() {
+            var w = document.getElementById('w').value;
+            var h = document.getElementById('h').value;
+            var bmi = w / (h / 100 * h / 100);
+            var bmio = (bmi.toFixed(2));
+            document.getElementById("result").innerHTML = "Your BMI is   " + bmio;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section>
+
+        <div>
+            <h6><a href="index.html"><span style="color: aliceblue"> Click Here to Back </span></a></h6>
+            <h2>BMI Calculator </h2>
+            <p class="text">Height</p>
+            <input type="text" id="h">
+            <p class="text"> Weight </p>
+            <input type="text" id="w">
+            <p id="result"></p>
+
+            <button id="btn" onclick="BMI()"> Calculate </button>
+            <h6><a href="BMI Calculator.html"><span style="color: aliceblue"> Refresh </span></a></h6>
+            <p id="info"> Please Enter Height [cm] and Weight [kg] </p>
+            <hr>
+            <h7>
+                &copy; Copyright <strong><span>FT GYM</span></strong>. All Rights Reserved</h7>
+
+        </div>
+
+    </section>
+
+
+
+
+</body>
+
+</html>
